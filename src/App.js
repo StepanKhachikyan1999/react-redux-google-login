@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom';
 import Account from './components/Account/Account';
-import Auth from './Auth';
-import Home from './Home';
+import Auth from './components/Account/Auth';
+import Home from './components/Account/Home';
 import './style.css'
 
 

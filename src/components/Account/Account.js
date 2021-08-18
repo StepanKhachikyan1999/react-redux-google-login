@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import Logout from "../../Logout";
+import Logout from "./Logout";
 import "./Accounts.css";
 class Account extends Component {
   render() {

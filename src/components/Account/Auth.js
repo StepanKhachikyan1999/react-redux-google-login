@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { GoogleLogin } from "react-google-login";
 import { Route, withRouter } from "react-router-dom";
-import Account from "./components/Account/Account";
+import Account from "./Account";
 
  class Auth extends Component {
   state = {
