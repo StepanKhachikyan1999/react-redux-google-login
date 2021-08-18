@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { GoogleLogin } from "react-google-login";
 import { Route, withRouter } from "react-router-dom";
-import Account from "./Account";
+import Account from "./components/Account/Account";
 
  class Auth extends Component {
   state = {
@@ -25,7 +25,7 @@ import Account from "./Account";
           <GoogleLogin
             clientId="532981390107-l01b64b3kg0ed76jan64g6pk2v2c0tro.apps.googleusercontent.com"
             buttonText={
-             <Route path={"/"} render={() => <button onClick={({history}) => this.props.history.push("/account")}>google</button>} />  
+             <Route path={"/"} render={() => <button onClick={({history}) => this.props.history.push("/account")}>Login</button>} />  
             }
             onSuccess={this.responseGoogle}
             onFailure={this.responseGoogle}
