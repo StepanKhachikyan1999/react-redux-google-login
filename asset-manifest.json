@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/react-redux-google-login/static/css/main.c9b64075.chunk.css",
-    "main.js": "/react-redux-google-login/static/js/main.8fe296a4.chunk.js",
-    "main.js.map": "/react-redux-google-login/static/js/main.8fe296a4.chunk.js.map",
+    "main.css": "/react-redux-google-login/static/css/main.fe051aa8.chunk.css",
+    "main.js": "/react-redux-google-login/static/js/main.07bb5b2a.chunk.js",
+    "main.js.map": "/react-redux-google-login/static/js/main.07bb5b2a.chunk.js.map",
     "runtime-main.js": "/react-redux-google-login/static/js/runtime-main.b6021803.js",
     "runtime-main.js.map": "/react-redux-google-login/static/js/runtime-main.b6021803.js.map",
     "static/css/2.818011ed.chunk.css": "/react-redux-google-login/static/css/2.818011ed.chunk.css",
-    "static/js/2.61b862cb.chunk.js": "/react-redux-google-login/static/js/2.61b862cb.chunk.js",
-    "static/js/2.61b862cb.chunk.js.map": "/react-redux-google-login/static/js/2.61b862cb.chunk.js.map",
+    "static/js/2.410e67f0.chunk.js": "/react-redux-google-login/static/js/2.410e67f0.chunk.js",
+    "static/js/2.410e67f0.chunk.js.map": "/react-redux-google-login/static/js/2.410e67f0.chunk.js.map",
     "index.html": "/react-redux-google-login/index.html",
     "static/css/2.818011ed.chunk.css.map": "/react-redux-google-login/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.c9b64075.chunk.css.map": "/react-redux-google-login/static/css/main.c9b64075.chunk.css.map",
-    "static/js/2.61b862cb.chunk.js.LICENSE.txt": "/react-redux-google-login/static/js/2.61b862cb.chunk.js.LICENSE.txt"
+    "static/css/main.fe051aa8.chunk.css.map": "/react-redux-google-login/static/css/main.fe051aa8.chunk.css.map",
+    "static/js/2.410e67f0.chunk.js.LICENSE.txt": "/react-redux-google-login/static/js/2.410e67f0.chunk.js.LICENSE.txt",
+    "static/media/1.b81f221c.png": "/react-redux-google-login/static/media/1.b81f221c.png",
+    "static/media/2.85970198.jpg": "/react-redux-google-login/static/media/2.85970198.jpg",
+    "static/media/3.88b76ddf.jpg": "/react-redux-google-login/static/media/3.88b76ddf.jpg",
+    "static/media/4.34581e7f.jpg": "/react-redux-google-login/static/media/4.34581e7f.jpg",
+    "static/media/5.a74990d5.png": "/react-redux-google-login/static/media/5.a74990d5.png",
+    "static/media/6.9ee65d70.jpg": "/react-redux-google-login/static/media/6.9ee65d70.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b6021803.js",
     "static/css/2.818011ed.chunk.css",
-    "static/js/2.61b862cb.chunk.js",
-    "static/css/main.c9b64075.chunk.css",
-    "static/js/main.8fe296a4.chunk.js"
+    "static/js/2.410e67f0.chunk.js",
+    "static/css/main.fe051aa8.chunk.css",
+    "static/js/main.07bb5b2a.chunk.js"
   ]
 }
