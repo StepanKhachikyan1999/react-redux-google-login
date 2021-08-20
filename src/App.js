@@ -3,7 +3,8 @@ import { Route } from 'react-router-dom';
 import Account from './components/Account/Account';
 import Auth from './components/Account/Auth';
 import Home from './components/Account/Home';
-import './style.css'
+import './App.css'
+import './style.css';
 
 
 

@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import Logout from "./Logout";
 import "./Accounts.css";
+import BasicPagination from "./pagination/BasicPagination";
+import Modal from "../Modal";
+
+
 class Account extends Component {
   render() {
     let item = localStorage.getItem("data");
@@ -16,46 +20,52 @@ class Account extends Component {
         <div className="logout">
           <Logout />
         </div>
+
+       <Modal />
         
-          {this.props.presentation.map((item) => {
-            return (
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Opened</th>
-                    <th scope="col">Size</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>{item.name}</td>
-                    <td>{item.data}</td>
-                    <td>{item.size}</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Wakira</td>
-                    <td>Apr 7</td>
-                    <td>450KB</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Wakira</td>
-                    <td>Apr 7</td>
-                    <td>450KB</td>
-                  </tr>
-                </tbody>
-              </table>
-            );
-          })}
+       <div style={{display:"flex",justifyContent:"center"}} className="account-body">
+                    <table>
+                        <tr>
+                            <th className="imgTh"></th>
+                            <th>Name</th>
+                            <th>Opened</th>
+                            <th>Size</th>
+                            <th className="butonsTh"></th>
+                        </tr>
+                        {this.props.presentation.map((item, index, arr) => {
+                            return <tr>
+
+                                <td>
+                                    <img className="account-body-img" src={item.img} style={{width:"50px"}} />
+
+                                </td>
+                                <td><h2> {item.name}</h2></td>
+                                <td>{item.opened}</td>
+                                <td>{item.size}</td>
+                                <td>
+                                    <button className="account-body-btn">View</button>
+                                    <button className="account-body-btn" onClick={() =>this.add(index)
+                               }>delete</button>
+                                </td>
+
+                            </tr>
+                        })}
+
+                    </table>
+                </div>
+            <button onClick={this.props.openModal}>Add list</button>
+          <BasicPagination />
       </div>
     );
   }
 }
 
 export default connect((state) => ({
-  presentation: state,
-}))(Account);
+  presentation: state.state1
+}),
+dispatch => ({
+  openModal: () => {
+    dispatch({type:"OPEN_MODAL"})
+  }
+})
+)(Account);
